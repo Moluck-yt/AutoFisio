@@ -63,17 +63,17 @@ O app segue o padrão **Model-View-ViewModel** recomendado pelo Android:
 
 ```
 ┌──────────────────────────────────────────────┐
-│                    VIEW                       │
-│  (Compose Screens: Welcome, UserData,         │
-│   Questionnaire, Report)                      │
-│         ↕ observa estado                      │
-│               ViewModel                       │
-│  (AssessmentViewModel: gerencia estado        │
-│   do fluxo e coordena a avaliação)            │
-│         ↕ usa                                 │
-│                MODEL                          │
-│  (UserData, QuestionnaireAnswers,             │
-│   RiskAssessment, RiskEngine)                 │
+│                    VIEW                      │
+│  (Compose Screens: Welcome, UserData,        │
+│   Questionnaire, Report)                     │
+│         ↕ observa estado                     │
+│               ViewModel                      │
+│  (AssessmentViewModel: gerencia estado       │
+│   do fluxo e coordena a avaliação)           │
+│         ↕ usa                                │
+│                MODEL                         │
+│  (UserData, QuestionnaireAnswers,            │
+│   RiskAssessment, RiskEngine)                │
 └──────────────────────────────────────────────┘
 ```
 
